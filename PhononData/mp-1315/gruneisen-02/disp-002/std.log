@@ -1,0 +1,113 @@
+Sender: LSF System <lsfadmin@cs-0059>
+Subject: Job 699417: <mp-1315-gruneisen-02-disp-002> in cluster <kclusterf> Done
+
+Job <mp-1315-gruneisen-02-disp-002> was submitted from host <wi-0001> by user <b32945> in cluster <kclusterf>.
+Job was executed on host(s) <20*cs-0059>, in queue <gr10260f>, as user <b32945> in cluster <kclusterf>.
+</home/b/b32945> was used as the home directory.
+</home/b/b32945/coguetmp/qha-02/c00632> was used as the working directory.
+Started at Thu Oct 15 02:20:39 2015
+Results reported on Thu Oct 15 02:30:35 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#QSUB -q gr10260f
+#QSUB -W 24:00
+#QSUB -A p=20:t=1:c=1:m=3072M
+#QSUB -rn
+#QSUB -J mp-1315-gruneisen-02-disp-002
+#QSUB -e err.log
+#QSUB -o std.log
+
+mpirun ~/vasp535mpi
+sleep 60
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               10698.72 sec.
+    Max Memory :             2785 MB
+    Average Memory :         2556.94 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Swap :               12178 MB
+    Max Processes :          25
+    Max Threads :            87
+
+The output (if any) follows:
+
+ running on   20 total cores
+ distrk:  each k-point on   20 cores,    1 groups
+ distr:  one band on    5 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.3.5 31Mar14 (build Nov 07 2014 11:36:17) complex                        
+  
+ POSCAR found type information on POSCAR  Mg S 
+ POSCAR found :  2 types and      64 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have a (more or less) 'large supercell' and for larger cells       |
+|      it might be more efficient to use real space projection opertators     |
+|      So try LREAL= Auto  in the INCAR   file.                               |
+|      Mind: At the moment your POTCAR file does not contain real space       |
+|       projectors, and has to be modified,  BUT if you                       |
+|      want to do an extremely  accurate calculation you might also keep the  |
+|      reciprocal projection scheme          (i.e. LREAL=.FALSE.)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You enforced a specific xc-type in the INCAR file,                     |
+|      a different type was found on the POTCAR file                          |
+|          I HOPE YOU KNOW, WHAT YOU ARE  DOING                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.428654804102E+04    0.42865E+04   -0.26667E+05  3888   0.166E+03
+DAV:   2     0.108667170891E+03   -0.41779E+04   -0.40248E+04  3792   0.429E+02
+DAV:   3    -0.282312043336E+03   -0.39098E+03   -0.38720E+03  3904   0.119E+02
+DAV:   4    -0.300926694715E+03   -0.18615E+02   -0.18550E+02  3648   0.219E+01
+DAV:   5    -0.301750219855E+03   -0.82353E+00   -0.82291E+00  4008   0.469E+00    0.244E+01
+DAV:   6    -0.291171354334E+03    0.10579E+02   -0.21408E+01  3580   0.702E+00    0.176E+01
+DAV:   7    -0.289897330548E+03    0.12740E+01   -0.78728E+00  3744   0.399E+00    0.894E+00
+DAV:   8    -0.289821024290E+03    0.76306E-01   -0.69931E-01  3540   0.170E+00    0.240E+00
+DAV:   9    -0.289815809726E+03    0.52146E-02   -0.26554E-02  3640   0.340E-01    0.519E-01
+DAV:  10    -0.289816250165E+03   -0.44044E-03   -0.67322E-03  3736   0.135E-01    0.226E-01
+DAV:  11    -0.289815982626E+03    0.26754E-03   -0.10283E-03  3528   0.626E-02    0.238E-02
+DAV:  12    -0.289815984282E+03   -0.16554E-05   -0.32463E-05  3744   0.113E-02    0.198E-02
+DAV:  13    -0.289815986657E+03   -0.23751E-05   -0.77535E-06  3560   0.548E-03    0.323E-03
+DAV:  14    -0.289815986409E+03    0.24756E-06   -0.16236E-06  3600   0.246E-03    0.283E-03
+DAV:  15    -0.289815986156E+03    0.25376E-06   -0.62629E-08  3056   0.551E-04    0.375E-03
+DAV:  16    -0.289815986280E+03   -0.12482E-06   -0.37124E-08  2896   0.324E-04    0.151E-03
+DAV:  17    -0.289815986294E+03   -0.13228E-07   -0.21945E-08  2440   0.300E-04    0.127E-03
+DAV:  18    -0.289815986359E+03   -0.65738E-07   -0.29051E-09  1968   0.126E-04    0.402E-04
+DAV:  19    -0.289815986394E+03   -0.34306E-07   -0.10910E-09  1944   0.616E-05    0.168E-04
+DAV:  20    -0.289815986380E+03    0.13504E-07   -0.40240E-10  1928   0.340E-05    0.144E-04
+DAV:  21    -0.289815986367E+03    0.12937E-07   -0.19640E-10  1944   0.154E-05    0.411E-05
+DAV:  22    -0.289815986364E+03    0.32160E-08   -0.17313E-10  1920   0.840E-06
+   1 F= -.28981599E+03 E0= -.28981599E+03  d E =-.815348E-57
+
+
+PS:
+
+Read file <err.log> for stderr output of this job.
+

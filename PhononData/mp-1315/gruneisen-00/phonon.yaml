@@ -1,0 +1,55 @@
+name:      gruneisen-00
+type:      phonon
+id:        624
+status:    done
+directory: gruneisen-00
+tasks:
+- name:      disp-001
+  type:      electronic_structure
+  id:        625
+  status:    done
+  directory: disp-001
+- name:      disp-002
+  type:      electronic_structure
+  id:        626
+  status:    done
+  directory: disp-002
+lattice_tolerance: 0.100000
+force_tolerance: 0.001000
+max_increase: unset
+max_iteration: 20
+min_iteration: 1
+supercell_matrix:
+- [   2,   0,   0 ]
+- [   0,   2,   0 ]
+- [   0,   0,   2 ]
+distance: 0.010000
+lattice:
+- [     5.1636450299999996,     0.0000000000000000,     0.0000000000000000 ] # a
+- [     0.0000000000000000,     5.1636450299999996,     0.0000000000000000 ] # b
+- [     0.0000000000000000,     0.0000000000000000,     5.1636450299999996 ] # c
+points:
+- symbol: Mg # 1
+  coordinates: [  0.0000000000000000,  0.0000000000000000,  0.0000000000000000 ]
+  mass: 24.305000
+- symbol: Mg # 2
+  coordinates: [  0.0000000000000000,  0.5000000000000000,  0.5000000000000000 ]
+  mass: 24.305000
+- symbol: Mg # 3
+  coordinates: [  0.5000000000000000,  0.0000000000000000,  0.5000000000000000 ]
+  mass: 24.305000
+- symbol: Mg # 4
+  coordinates: [  0.5000000000000000,  0.5000000000000000,  0.0000000000000000 ]
+  mass: 24.305000
+- symbol: S  # 5
+  coordinates: [  0.5000000000000000,  0.0000000000000000,  0.0000000000000000 ]
+  mass: 32.065000
+- symbol: S  # 6
+  coordinates: [  0.5000000000000000,  0.5000000000000000,  0.5000000000000000 ]
+  mass: 32.065000
+- symbol: S  # 7
+  coordinates: [  0.0000000000000000,  0.0000000000000000,  0.5000000000000000 ]
+  mass: 32.065000
+- symbol: S  # 8
+  coordinates: [  0.0000000000000000,  0.5000000000000000,  0.0000000000000000 ]
+  mass: 32.065000
