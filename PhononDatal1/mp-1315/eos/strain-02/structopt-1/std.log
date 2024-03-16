@@ -1,0 +1,96 @@
+Sender: LSF System <lsfadmin@cs-0058>
+Subject: Job 699190: <mp-1315ph_relax-eos-strain-02-1> in cluster <kclusterf> Done
+
+Job <mp-1315ph_relax-eos-strain-02-1> was submitted from host <wi-0001> by user <b32945> in cluster <kclusterf>.
+Job was executed on host(s) <20*cs-0058>, in queue <gr10260f>, as user <b32945> in cluster <kclusterf>.
+</home/b/b32945> was used as the home directory.
+</home/b/b32945/coguetmp/qha-02/c00314> was used as the working directory.
+Started at Thu Oct 15 01:05:31 2015
+Results reported on Thu Oct 15 01:06:39 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#QSUB -q gr10260f
+#QSUB -W 24:00
+#QSUB -A p=20:t=1:c=1:m=3072M
+#QSUB -rn
+#QSUB -J mp-1315ph_relax-eos-strain-02-1
+#QSUB -e err.log
+#QSUB -o std.log
+
+mpirun ~/vasp535mpi
+sleep 60
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               149.97 sec.
+    Max Memory :             4 MB
+    Average Memory :         4.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Swap :               431 MB
+    Max Processes :          5
+    Max Threads :            6
+
+The output (if any) follows:
+
+ running on   20 total cores
+ distrk:  each k-point on   20 cores,    1 groups
+ distr:  one band on    5 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.3.5 31Mar14 (build Nov 07 2014 11:36:17) complex                        
+  
+ POSCAR found type information on POSCAR  Mg S 
+ POSCAR found :  2 types and       8 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You enforced a specific xc-type in the INCAR file,                     |
+|      a different type was found on the POTCAR file                          |
+|          I HOPE YOU KNOW, WHAT YOU ARE  DOING                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.458011945913E+03    0.45801E+03   -0.34697E+04   888   0.154E+03
+DAV:   2    -0.406816010985E+01   -0.46208E+03   -0.44954E+03   856   0.389E+02
+DAV:   3    -0.366683690739E+02   -0.32600E+02   -0.32433E+02   844   0.104E+02
+DAV:   4    -0.376821895508E+02   -0.10138E+01   -0.10116E+01   868   0.161E+01
+DAV:   5    -0.377108411466E+02   -0.28652E-01   -0.28642E-01   892   0.262E+00    0.856E+00
+DAV:   6    -0.363949750633E+02    0.13159E+01   -0.25964E+00   768   0.654E+00    0.632E+00
+DAV:   7    -0.362359440766E+02    0.15903E+00   -0.76572E-01   904   0.337E+00    0.358E+00
+DAV:   8    -0.362292934022E+02    0.66507E-02   -0.49574E-02   788   0.137E+00    0.102E+00
+DAV:   9    -0.362284857991E+02    0.80760E-03   -0.24652E-03   876   0.268E-01    0.281E-01
+DAV:  10    -0.362285145280E+02   -0.28729E-04   -0.55093E-04   892   0.112E-01    0.161E-02
+DAV:  11    -0.362285102087E+02    0.43193E-05   -0.27906E-05   820   0.292E-02    0.205E-02
+DAV:  12    -0.362285095826E+02    0.62612E-06   -0.17812E-06   888   0.712E-03    0.229E-03
+DAV:  13    -0.362285095337E+02    0.48880E-07   -0.15729E-07   872   0.204E-03    0.119E-03
+DAV:  14    -0.362285094885E+02    0.45252E-07   -0.13494E-08   784   0.472E-04    0.159E-03
+DAV:  15    -0.362285095259E+02   -0.37381E-07   -0.11633E-08   708   0.562E-04    0.518E-05
+DAV:  16    -0.362285095235E+02    0.23083E-08   -0.19379E-10   432   0.935E-05
+   1 F= -.36228510E+02 E0= -.36228510E+02  d E =-.362285E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.805E-60 g(S)=  0.283E-33 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.100E-09
+ reached required accuracy - stopping structural energy minimisation
+
+
+PS:
+
+Read file <err.log> for stderr output of this job.
+

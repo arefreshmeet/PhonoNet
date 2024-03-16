@@ -1,0 +1,165 @@
+name:      phonon
+type:      phonon
+id:        82
+status:    done
+directory: phonon
+tasks:
+- name:      equilibrium
+  type:      structopt
+  id:        83
+  status:    done
+  directory: equilibrium
+- name:      disp-001
+  type:      electronic_structure
+  id:        2259
+  status:    done
+  directory: disp-001
+- name:      disp-002
+  type:      electronic_structure
+  id:        2260
+  status:    done
+  directory: disp-002
+- name:      disp-003
+  type:      electronic_structure
+  id:        2261
+  status:    done
+  directory: disp-003
+- name:      disp-004
+  type:      electronic_structure
+  id:        2262
+  status:    done
+  directory: disp-004
+- name:      disp-005
+  type:      electronic_structure
+  id:        2263
+  status:    done
+  directory: disp-005
+- name:      disp-006
+  type:      electronic_structure
+  id:        2264
+  status:    done
+  directory: disp-006
+- name:      disp-007
+  type:      electronic_structure
+  id:        2265
+  status:    done
+  directory: disp-007
+- name:      disp-008
+  type:      electronic_structure
+  id:        2266
+  status:    done
+  directory: disp-008
+- name:      disp-009
+  type:      electronic_structure
+  id:        2267
+  status:    done
+  directory: disp-009
+- name:      disp-010
+  type:      electronic_structure
+  id:        2268
+  status:    done
+  directory: disp-010
+- name:      disp-011
+  type:      electronic_structure
+  id:        2269
+  status:    done
+  directory: disp-011
+- name:      disp-012
+  type:      electronic_structure
+  id:        2270
+  status:    done
+  directory: disp-012
+- name:      disp-013
+  type:      electronic_structure
+  id:        2271
+  status:    done
+  directory: disp-013
+- name:      disp-014
+  type:      electronic_structure
+  id:        2272
+  status:    done
+  directory: disp-014
+- name:      disp-015
+  type:      electronic_structure
+  id:        2273
+  status:    done
+  directory: disp-015
+- name:      disp-016
+  type:      electronic_structure
+  id:        2274
+  status:    done
+  directory: disp-016
+- name:      disp-017
+  type:      electronic_structure
+  id:        2275
+  status:    done
+  directory: disp-017
+- name:      disp-018
+  type:      electronic_structure
+  id:        2276
+  status:    done
+  directory: disp-018
+- name:      disp-019
+  type:      electronic_structure
+  id:        2277
+  status:    done
+  directory: disp-019
+- name:      disp-020
+  type:      electronic_structure
+  id:        2278
+  status:    done
+  directory: disp-020
+lattice_tolerance: 0.100000
+stress_tolerance: 10.000000
+pressure_target: 0.000000
+force_tolerance: 0.001000
+max_increase: unset
+max_iteration: 20
+min_iteration: 1
+supercell_matrix:
+- [   3,   0,   0 ]
+- [   0,   2,   0 ]
+- [   0,   0,   2 ]
+distance: 0.010000
+lattice:
+- [     5.0260294700000001,     0.0000000000000000,    -0.1225459100000000 ] # a
+- [     0.0000000000000000,     5.3303912999999996,     0.0000000000000000 ] # b
+- [    -0.4346270500000000,     0.0000000000000000,     5.1806685999999997 ] # c
+points:
+- symbol: O  # 1
+  coordinates: [  0.7379508600000000,  0.4391870900000000,  0.0078305100000000 ]
+  mass: 15.999400
+- symbol: O  # 2
+  coordinates: [  0.2620491400000000,  0.4391870900000000,  0.4921694900000000 ]
+  mass: 15.999400
+- symbol: O  # 3
+  coordinates: [  0.2620491400000000,  0.5608129100000000,  0.9921694900000000 ]
+  mass: 15.999400
+- symbol: O  # 4
+  coordinates: [  0.7379508600000000,  0.5608129100000000,  0.5078305100000000 ]
+  mass: 15.999400
+- symbol: O  # 5
+  coordinates: [  0.2462288000000000,  0.9258587200000000,  0.5910770100000000 ]
+  mass: 15.999400
+- symbol: O  # 6
+  coordinates: [  0.7537712000000000,  0.9258587200000000,  0.9089229900000000 ]
+  mass: 15.999400
+- symbol: O  # 7
+  coordinates: [  0.7537712000000000,  0.0741412800000000,  0.4089229900000000 ]
+  mass: 15.999400
+- symbol: O  # 8
+  coordinates: [  0.2462288000000000,  0.0741412800000000,  0.0910770100000000 ]
+  mass: 15.999400
+- symbol: Lu # 9
+  coordinates: [  0.0000000000000000,  0.2338388500000000,  0.7500000000000000 ]
+  mass: 174.967000
+- symbol: Lu # 10
+  coordinates: [  0.0000000000000000,  0.7661611500000000,  0.2500000000000000 ]
+  mass: 174.967000
+- symbol: Ta # 11
+  coordinates: [  0.5000000000000000,  0.2992874800000000,  0.2500000000000000 ]
+  mass: 180.947880
+- symbol: Ta # 12
+  coordinates: [  0.5000000000000000,  0.7007125199999999,  0.7500000000000000 ]
+  mass: 180.947880
+electric_total_energy:      -116.7840706500
