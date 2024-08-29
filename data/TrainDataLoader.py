@@ -3,9 +3,10 @@ import numpy as np
 import os
 
 class TrainDataLoader:
-    def __init__(self, num_one_hot, base_path):
+    def __init__(self, num_one_hot, base_path,aroundpath):
         self.num_one_hot = num_one_hot
         self.base_path = base_path
+        self.aroudpath = aroundpath
         self.device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
     
     def make_dataset(self,subpath):
@@ -202,7 +203,7 @@ class TrainDataLoader:
         torch.save(around_dos, subpath + self.aroundpath)
         return around_dos
 
-    def process(self, aroundpath):
+    def process(self):
         print('start process')
         all_features = []
         all_labels = []
@@ -216,7 +217,7 @@ class TrainDataLoader:
                 continue
             if not(os.path.exists(subpath + '/DataSet')):
                 self.make_dataset(subpath)
-            oh_data, One_hot, dos, qdos, around_dos, labels, Weight = self.prepare_dataset(subpath, aroundpath)
+            oh_data, One_hot, dos, qdos, around_dos, labels, Weight = self.prepare_dataset(subpath)
 
             features = torch.cat((dos, qdos, around_dos), dim=1)
             all_features.append(features)
